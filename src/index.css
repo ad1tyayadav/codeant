@@ -1,0 +1,10 @@
+@import url('https://fonts.cdnfonts.com/css/switzer');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    font-family: 'Switzer', sans-serif;
+}
