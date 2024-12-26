@@ -32,8 +32,11 @@ const Dashboard = () => {
           <div>
             <div className="flex items-center justify-between p-4 border-b bg-white">
               <div className="flex items-center gap-2">
-                <img src="https://github.com/shadcn.png" alt="Logo" className="w-8 h-8 rounded-full" />
-                <span className="font-semibold">CodeAnt AI</span>
+              <img
+                src="/Codeant.avif"
+                alt="Logo"
+                className="w-52 h-auto rounded-full invert"
+              />
               </div>
               <button
                 onClick={() => setIsMobileMenuOpen(true)}
