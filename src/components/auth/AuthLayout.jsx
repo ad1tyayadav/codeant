@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const AuthLayout = ({ children }) => {
   return (
-    <div id='boxx' className="min-h-screen bg-[#fafafa] flex">
+    <div className="min-h-screen bg-[#fafafa] flex">
       <img
-        className="absolute bottom-[-7.6vh] left-[-3vw] w-1/4 h-auto object-contain opacity-[30%]"
+        className="hidden sm:block absolute bottom-[-7.6vh] left-[-3vw] w-1/4 h-auto object-contain opacity-[30%]"
         src="/CodeAntImage.png"
         alt="Image"
       />
@@ -46,16 +47,16 @@ const AuthLayout = ({ children }) => {
                   className='w-4 object-contain mr-1'
                   src="up-arrow.png" alt="" />
                 <span>14%</span>
-                <span className='text-black absolute top-14 right-4 text-sm'>This Weak</span>
+                <span className='overflow-hidden text-black absolute top-14 right-4 text-sm'>This Weak</span>
               </div>
             </div>
           </div>
           <p className="text-gray-500 text-sm">Issues Fixed</p>
-          <p className="text-4xl font-bold">500K+</p>
+          <p className="text-3xl font-bold">500K+</p>
         </div>
       </div>
 
-      <div className="min-h-screen sm:w-[50%] flex flex-col items-center justify-center p-4">
+      <div className="min-h-screen m-auto sm:w-[50%] flex flex-col items-center justify-center p-4">
         <div className="w-full max-w-xl bg-white rounded-xl shadow-lg p-6 space-y-6">
           <div className="text-center space-y-2">
             <div className="flex items-center justify-center gap-2">
@@ -69,6 +70,13 @@ const AuthLayout = ({ children }) => {
           </div>
           {children}
         </div>
+       {/* Privacy Policy Link */}
+       <div className="absolute top-[86vh] left-[15vw] sm:top-[80vh] sm:left-[66vw] text-sm text-center text-gray-500 mt-4">
+        By signing up you agree to the{' '}
+        <Link to="#" className="text-black font-bold hover:underline">
+          Privacy Policy
+        </Link>
+      </div>
       </div>
     </div>
   );

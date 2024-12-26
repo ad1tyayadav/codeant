@@ -98,13 +98,7 @@ const LoginForm = () => {
         </div>
       )}
 
-      {/* Privacy Policy Link */}
-      <p className="text-sm text-center text-gray-500 mt-4">
-        By signing up you agree to the{' '}
-        <Link to="#" className="text-black font-bold hover:underline">
-          Privacy Policy
-        </Link>
-      </p>
+     
     </div>
   );
 };
