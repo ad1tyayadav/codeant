@@ -12,16 +12,19 @@ const RepositoryList = () => {
   );
 
   return (
-    <div className="flex-1 p-6">
+    <div className="flex-1 sm:p-6">
       <div className="flex flex-col bg-white shadow-xl p-4 gap-6 rounded-xl">
-        <div className="flex items-center justify-between">
-          <h1 className="text-xl font-semibold">Repositories</h1>
+        <div className="flex text-sm sm:text-xl items-center justify-between">
+          <div>
+            <h1 className="sm:text-xl font-semibold">Repositories</h1>
+            <span className='text-sm text-gray-500'>{repositories.length} total repositories</span>
+          </div>
           <div className="flex items-center gap-1">
             <button className="flex items-center gap-2 px-3 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
               <RefreshCcw size={18} />
               <span>Refresh All</span>
             </button>
-            <button className="flex items-center gap-2 px-3 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700">
+            <button className="flex items-center px-3 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700">
               <Plus size={18} />
               <span>Add Repository</span>
             </button>
