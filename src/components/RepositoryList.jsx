@@ -14,13 +14,13 @@ const RepositoryList = () => {
   return (
     <div className="flex-1 sm:p-6">
       <div className="flex flex-col bg-white shadow-xl p-4 gap-6 rounded-xl">
-        <div className="flex text-sm sm:text-xl items-center justify-between">
+        <div className="sm:flex text-sm sm:text-xl items-center justify-between">
           <div>
-            <h1 className="sm:text-xl font-semibold">Repositories</h1>
+            <h1 className="text-2xl font-semibold">Repositories</h1>
             <span className='text-sm text-gray-500'>{repositories.length} total repositories</span>
           </div>
-          <div className="flex items-center gap-1">
-            <button className="flex items-center gap-2 px-3 py-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+          <div className="flex mt-4 relative right-3 sm:mt-0 items-center gap-1">
+            <button className="flex items-center gap-2 px-3 py-2 border text-gray-600 hover:bg-gray-100 rounded-lg">
               <RefreshCcw size={18} />
               <span>Refresh All</span>
             </button>
